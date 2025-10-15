@@ -68,11 +68,11 @@ function Footer() {
                     <FaArrowRight /> Contact
                   </li>
                 </Link>
-                <Link href="/book-now">
+                {/*<Link href="/book-now">
                   <li className="text-xs md:text-sm text-neutral-500 flex items-center gap-2 hover:text-[#f1852d] transition-all duration-500 hover:underline">
                     <FaArrowRight /> Book Now
                   </li>
-                </Link>
+                </Link>*/}
               </ul>
             </div>
             <div>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [navList, setNavList] = useState("");
@@ -56,10 +57,9 @@ function Navbar() {
             </ul>
           </nav>
           <button
-            className="md:hidden border border-neutral-200 w-10 h-10 rounded-md"
             onClick={() => setNavList(!navList)}
           >
-            X
+            {navList ? <FaTimes className="text-3xl" /> : <FaBars className="text-3xl" />}
           </button>
           {navList ? (
             <ul className="flex md:hidden flex-col absolute left-0 top-20 w-full bg-white shadow p-[8%] gap-3">
@@ -85,12 +85,12 @@ function Navbar() {
               <Link href="/gallery" onClick={() => setNavList(!navList)}>
                 <li className="text-xs md:text-sm text-neutral-500">Gallery</li>
               </Link>
-              <Link href="/contact" onClick={() => setNavList(!navList)}>
+              {/*<Link href="/contact" onClick={() => setNavList(!navList)}>
                 <li className="text-xs md:text-sm text-neutral-500">Contact</li>
-              </Link>
-              <Link href="/book-now" onClick={() => setNavList(!navList)}>
+              </Link>*/}
+              <Link href="/contact" onClick={() => setNavList(!navList)}>
                 <button className="w-full bg-gradient-to-r from-[#b86320] to-[#f1852d] px-6 py-4 text-xs md:text-sm rounded-full text-white">
-                  Book Now
+                  Contact
                 </button>
               </Link>
             </ul>
