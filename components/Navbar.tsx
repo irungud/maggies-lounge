@@ -56,10 +56,12 @@ function Navbar() {
               </Link>
             </ul>
           </nav>
-          <button
-            onClick={() => setNavList(!navList)}
-          >
-            {navList ? <FaTimes className="text-3xl" /> : <FaBars className="text-3xl" />}
+          <button className="md:hidden" onClick={() => setNavList(!navList)}>
+            {navList ? (
+              <FaTimes className="text-3xl" />
+            ) : (
+              <FaBars className="text-3xl" />
+            )}
           </button>
           {navList ? (
             <ul className="flex md:hidden flex-col absolute left-0 top-20 w-full bg-white shadow p-[8%] gap-3">
