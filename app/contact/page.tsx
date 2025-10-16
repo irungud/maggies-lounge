@@ -219,7 +219,13 @@ function Contact() {
               <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
                 <span></span>
                 <p className="text-xs md:text-sm text-white">
-                  +254 786 484277 - Accomodation
+                  +254 786 484 277 - Accomodation
+                </p>
+              </div>
+              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
+                <span></span>
+                <p className="text-xs md:text-sm text-white">
+                  +254 725 939 703 - Accomodation
                 </p>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">

@@ -81,7 +81,7 @@ function Footer() {
                 Contact Us
               </h4>
               <ul className="flex flex-col md:gap-3 gap-1 md:mt-3 mt-1">
-                <Link href="tel:+254729893856">
+                <Link href="tel:+254785546302">
                   <li className="text-xs md:text-sm text-neutral-500 flex items-center gap-2">
                     <span className="w-7 h-7 bg-gradient-to-r from-[#b86320] to-[#f1852d] rounded-full flex items-center justify-center">
                       <LuPhoneCall className="text-white" />
@@ -89,12 +89,20 @@ function Footer() {
                     <p>+254 785 546 302 - Restaurant</p>
                   </li>
                 </Link>
-                <Link href="tel:+254729893856">
+                <Link href="tel:+254786484277">
                   <li className="text-xs md:text-sm text-neutral-500 flex items-center gap-2">
                     <span className="w-7 h-7 bg-gradient-to-r from-[#b86320] to-[#f1852d] rounded-full flex items-center justify-center">
                       <LuPhoneCall className="text-white" />
                     </span>
-                    <p>+254 786 484277 - Accomodation</p>
+                    <p>+254 786 484 277 - Accomodation</p>
+                  </li>
+                </Link>
+                <Link href="tel:+254725939703">
+                  <li className="text-xs md:text-sm text-neutral-500 flex items-center gap-2">
+                    <span className="w-7 h-7 bg-gradient-to-r from-[#b86320] to-[#f1852d] rounded-full flex items-center justify-center">
+                      <LuPhoneCall className="text-white" />
+                    </span>
+                    <p>+254 725 939 703 - Accomodation</p>
                   </li>
                 </Link>
                 <Link href="mailto:info@maggieslounge.com">
