@@ -21,10 +21,11 @@ function Footer() {
               />
             </Link>
             <p className="text-xs md:text-sm text-neutral-500 md:mt-4 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-              repellat pariatur nulla, earum tempore ipsa laudantium soluta ut
-              reiciendis eligendi minus sequi ex. Voluptate sunt beatae velit,
-              voluptatibus labore aut!
+              At Maggies Lounge, great food meets great vibes. Enjoy a
+              mouthwatering selection of freshly prepared dishes while soaking
+              in lively entertainment from top performers and DJs. Whether
+              you’re here for a meal, a drink, or a night of fun, we’ve got
+              everything you need to satisfy your taste and lift your spirit.
             </p>
           </div>
           <div className="flex md:flex-row flex-col md:gap-20 gap-5">

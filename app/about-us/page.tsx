@@ -18,15 +18,11 @@ function About() {
               </span>
             </h4>
             <p className="text-xs md:text-sm md:mt-8 mt-4 text-neutral-500">
-              Yes, the happiness and comfort of our customers come first.
-              Starting with our meals, real expertise is at work. We have
-              traditional and modern delicacies, with a taste of excellence.
-              When it comes to drinks, we serve you drinks based on your taste
-              and preference. Entertainment is never left behind, we play our
-              client's favorite playlists, which keeps our customers happy.
-              Football is always watched from our large screens, leaving every
-              fan with every detail of the game. Everything we do is a piece of
-              art.
+              At Maggies Lounge, great food meets great vibes. Enjoy a
+              mouthwatering selection of freshly prepared dishes while soaking
+              in lively entertainment from top performers and DJs. Whether
+              you’re here for a meal, a drink, or a night of fun, we’ve got
+              everything you need to satisfy your taste and lift your spirit.
             </p>
           </div>
           <div className="w-full">
@@ -105,12 +101,12 @@ function About() {
               </span>
             </h4>
             <p className="text-xs md:text-sm text-neutral-500 md:mt-8 mt-4">
-              To preserve Maggies Nest Restaurant quality, we have to make sure
-              each department is being handled by expert. When it comes to
-              preparing meals, we have professional chefs doing the work, and
-              they do it the best way possible. Our waiters and waitresses are
-              also trained to serve our customers excellently. We work with
-              professionals to serve our customers the best.
+              At Maggies Lounge, we take pride in offering service that goes
+              beyond expectations. Our experienced chefs, bartenders, and
+              attendants are passionate about what they do — ensuring that every
+              dish, drink, and detail is handled with care. From the moment you
+              arrive to the time you leave, our friendly team is committed to
+              making your visit comfortable, enjoyable, and truly unforgettable.
             </p>
           </div>
           <div className="w-full">

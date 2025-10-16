@@ -20,10 +20,10 @@ function Home() {
               </span>
             </h4>
             <p className="text-xs md:text-sm text-neutral-500 md:mt-8 mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              suscipit, modi quas deleniti veritatis, debitis laboriosam illo
-              dolores qui praesentium facilis veniam dolorem ratione eius
-              nesciunt et, corrupti accusamus? Consequuntur.
+              Indulge in a complete experience at Maggies Lounge — where
+              flavorful dishes, refreshing drinks, and cozy rooms come together
+              in one inviting space. Whether you’re dining, relaxing, or staying
+              the night, we make every moment unforgettable.
             </p>
             <Link href="/">
               <button className="bg-gradient-to-r from-[#b86320] to-[#f1852d] px-6 py-4 rounded-full text-xs md:text-sm text-white md:mt-8 mt-4 cursor-pointer">
@@ -140,10 +140,10 @@ function Home() {
             </span>
           </h4>
           <p className="text-xs md:text-sm text-neutral-500 md:mt-8 mt-4 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur assumenda asperiores quas nemo necessitatibus inventore.
-            Quibusdam consequatur sed necessitatibus laudantium nam. Minus
-            doloremque ducimus, porro earum architecto deleniti veniam quas.
+            Experience electrifying nights at Maggies Lounge with live
+            performances from renowned artists, talented DJs, and vibrant MCs.
+            Our events bring great music, good vibes, and unforgettable memories
+            all under one roof.
           </p>
           <Link href="/">
             <button className="bg-gradient-to-r from-[#b86320] to-[#f1852d] px-6 py-4 rounded-full text-xs md:text-sm text-white md:mt-8 mt-4 cursor-pointer">
@@ -163,11 +163,10 @@ function Home() {
               </span>
             </h4>
             <p className="text-xs md:text-sm text-neutral-500 md:mt-8 mt-4">
-              We not only serve you drinks to enjoy, but we also serve them as a
-              simpler way to relax your thoughts in every sip and you unwind the
-              occurrences of your day, thus creating space for better ideas and
-              new energy. We do not just sell you drinks, we offer you a way to
-              refresh your mind.
+              Step into a warm and inviting atmosphere where every moment feels
+              special. Whether you’re enjoying a cocktail, sharing a meal, or
+              simply taking a break, Maggies Lounge is the perfect place to
+              relax and let the good times flow.
             </p>
           </div>
           <div className="w-full">

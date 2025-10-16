@@ -434,7 +434,7 @@ export const barMenu = [
   },
   {
     id: 11,
-    img: "/drinks-redbull.png",
+    img: "/drinks-redbull-can.png",
     name: "Redbull",
     category: "Drinks",
     price: "300",
@@ -538,7 +538,7 @@ export const barMenu = [
   },
   {
     id: 24,
-    img: "/drinks-cherome-250ml.png",
+    img: "/drinks-chrome-250ml.png",
     name: "Chrome 250ml",
     category: "Drinks",
     price: "400",
@@ -586,7 +586,7 @@ export const barMenu = [
   },
   {
     id: 30,
-    img: "/drinks-orchid.png",
+    img: "/drinks-orchid-250ml.png",
     name: "Orchid",
     category: "Drinks",
     price: "450",
@@ -602,7 +602,7 @@ export const barMenu = [
   },
   {
     id: 32,
-    img: "/drinks-v-a-creame-whisky.png",
+    img: "/drinks-v-a-creame-whisky-250ml.png",
     name: "V & A (Creame Whisky)",
     category: "Drinks",
     price: "450",
@@ -658,7 +658,7 @@ export const barMenu = [
   },
   {
     id: 40,
-    img: "/drinks-all-seasons-250ml.png",
+    img: "/drinks-all-seasons-whisky-250ml.png",
     name: "All Seasons 250ml (Whisky)",
     category: "Drinks",
     price: "600",
@@ -666,7 +666,7 @@ export const barMenu = [
   },
   {
     id: 41,
-    img: "/drinks-bond-7-250ml-whisky.png",
+    img: "/drinks-bond-7-whisky-250ml.png",
     name: "Bond 7 250ml (Whisky)",
     category: "Drinks",
     price: "600",
@@ -698,8 +698,8 @@ export const barMenu = [
   },
   {
     id: 45,
-    img: "/drinks-hunter-500ml.png",
-    name: "Hunter 500ml",
+    img: "/drinks-hunters-500ml.png",
+    name: "Hunters 500ml",
     category: "Drinks",
     price: "750",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda asperiores quas nemo necessitatibus inventore. Quibusdam consequatur sed necessitatibus laudantium nam. Minus doloremque ducimus, porro earum architecto deleniti veniam quas.",
@@ -810,7 +810,7 @@ export const barMenu = [
   },
   {
     id: 59,
-    img: "/drinks-cavibla-750ml.png",
+    img: "/",
     name: "Cavibla 750ml (Gin)",
     category: "Drinks",
     price: "1200",
@@ -906,16 +906,16 @@ export const barMenu = [
   },
   {
     id: 71,
-    img: "/drinks-best-whiskey-750ml.png",
-    name: "Best Whiskey 750ml",
+    img: "/drinks-best-whisky-750ml.png",
+    name: "Best Whisky 750ml",
     category: "Spirit",
     price: "1500",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda asperiores quas nemo necessitatibus inventore. Quibusdam consequatur sed necessitatibus laudantium nam. Minus doloremque ducimus, porro earum architecto deleniti veniam quas.",
   },
   {
     id: 72,
-    img: "/drinks-gordons-500ml.png",
-    name: "Gordon 500ml",
+    img: "/drinks-gordons-750ml.png",
+    name: "Gordons 500ml",
     category: "Spirit",
     price: "1500",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda asperiores quas nemo necessitatibus inventore. Quibusdam consequatur sed necessitatibus laudantium nam. Minus doloremque ducimus, porro earum architecto deleniti veniam quas.",
@@ -994,7 +994,7 @@ export const barMenu = [
   },
   {
     id: 82,
-    img: "/drinks-bond-750ml.png",
+    img: "/drinks-bond-7-750ml.png",
     name: "Bond 7 750ml",
     category: "Drinks",
     price: "2000",
@@ -1146,8 +1146,8 @@ export const barMenu = [
   },
   {
     id: 101,
-    img: "/drinks-tanqueray-750ml.png",
-    name: "Tanqueray 750ml",
+    img: "/drinks-tangeray.png",
+    name: "Tangeray 750ml",
     category: "Drinks",
     price: "4500",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda asperiores quas nemo necessitatibus inventore. Quibusdam consequatur sed necessitatibus laudantium nam. Minus doloremque ducimus, porro earum architecto deleniti veniam quas.",
@@ -1194,7 +1194,7 @@ export const barMenu = [
   },
   {
     id: 107,
-    img: "/drinks-jack-jadiels-750ml.png",
+    img: "/drinks-jack-daniels-750ml.png",
     name: "Jack Daniels 750ml",
     category: "Drinks",
     price: "5500",
