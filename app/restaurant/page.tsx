@@ -16,7 +16,7 @@ function Restaurant() {
           </h4>
           <div className="grid grid-cols-auto-sm md:gap-4 gap-2 md:mt-4 mt-2">
             {breakfast.map((dish, i) => (
-              <Link href="/" key={i}>
+              <Link href={`/restaurant/foods/${dish.id}`} key={i}>
                 <div>
                   <Image
                     src={dish.img}
@@ -47,7 +47,7 @@ function Restaurant() {
           </h4>
           <div className="grid grid-cols-auto-sm md:gap-4 gap-2 md:mt-4 mt-2">
             {Bitings.map((dish, i) => (
-              <Link href="/" key={i}>
+              <Link href={`/restaurant/bitings/${dish.id}`} key={i}>
                 <div>
                   <Image
                     src={dish.img}
@@ -81,7 +81,7 @@ function Restaurant() {
           </h4>
           <div className="grid grid-cols-auto-sm md:gap-4 gap-2 md:mt-4 mt-2">
             {MainCourse.map((dish, i) => (
-              <Link href="/" key={i}>
+              <Link href={`/restaurant/main-course/${dish.id}`} key={i}>
                 <div>
                   <Image
                     src={dish.img}

@@ -33,10 +33,11 @@ function Home() {
           </div>
           <div className="w-full">
             <Image
-              src="/roasted-chicken.png"
-              width={400}
-              height={250}
-              alt="roasted-chicken"
+              src="/maggies-bar-1.png"
+              width={650}
+              height={650}
+              alt="maggies-bar-1"
+              className="md:rounded-3xl rounded-xl md:w-96 w-full md:mx-auto"
             />
           </div>
         </div>
@@ -107,7 +108,7 @@ function Home() {
           </h4>
           <div className="md:mt-8 mt-4 grid grid-cols-auto-sm md:gap-4 gap-2">
             {breakfast.slice(0, 6).map((dish, i) => (
-              <Link href={`/restaurant/food/${dish.id}`} key={i}>
+              <Link href={`/restaurant/foods/${dish.id}`} key={i}>
                 <div>
                   <Image
                     src={dish.img}

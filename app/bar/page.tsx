@@ -9,7 +9,7 @@ function Bar() {
       <div className="px-[8%] md:py-8 py-4 flex items-center justify-center">
         <div className="w-full max-w-7xl grid grid-cols-auto-sm md:gap-4 gap-2">
           {barMenu.map((drink, i) => (
-            <Link href="/">
+            <Link href={`/bar/drinks/${drink.id}`}>
               <div>
                 <Image
                   src={drink.img}

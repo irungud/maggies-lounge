@@ -28,7 +28,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .grid-cols-auto-sm {
+  .grid-cols-auto {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .grid-cols-auto-sm {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }

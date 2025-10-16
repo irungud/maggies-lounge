@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -42,6 +42,49 @@ const formSchema = z.object({
 });
 
 function Contact() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "19986902-716f-4b77-a495-8260b0151c7d",
+          ...formData
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -88,38 +131,19 @@ function Contact() {
               Fill the Form Below to Send Us an Email
             </p>
             <form
-              action=""
+              onSubmit={handleSubmit}
               className="md:mt-8 mt-4 bg-white md:p-10 p-5 rounded-2xl border border-neutral-200"
             >
-              <div className="flex md:flex-row flex-col md:gap-4 gap-2">
-                <div className="w-full">
-                  <label htmlFor="firstName" className="text-xs md:text-sm">
-                    Firstname
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="John"
-                    className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
-                  />
-                </div>
-                <div className="w-full">
-                  <label htmlFor="lastName" className="text-xs md:text-sm">
-                    Lastname
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Doe"
-                    className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
-                  />
-                </div>
-              </div>
               <div className="md:mt-4 mt-2">
                 <label htmlFor="email" className="text-xs md:text-sm">
-                  Email
+                  Fullname
                 </label>
                 <input
-                  type="email"
-                  placeholder="johndoe@company.com"
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="John Doe"
                   className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
                 />
               </div>
@@ -127,9 +151,24 @@ function Contact() {
                 <label htmlFor="email" className="text-xs md:text-sm">
                   Email
                 </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="johndoe@company.com"
+                  className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
+                />
+              </div>
+              <div className="md:mt-4 mt-2">
+                <label htmlFor="email" className="text-xs md:text-sm">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Write Your Message Here..."
                   className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 md:h-32 h-16 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
                 ></textarea>
