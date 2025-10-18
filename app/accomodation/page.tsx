@@ -203,6 +203,42 @@ function Accomodation() {
               className="rounded-3xl"
             />
           </div>
+          <div>
+            <Image
+              src="/accomodation-img-5.png"
+              width={550}
+              height={550}
+              alt="accodation-img-4"
+              className="rounded-3xl"
+            />
+          </div>
+          <div>
+            <Image
+              src="/accomodation-img-6.png"
+              width={550}
+              height={550}
+              alt="accodation-img-4"
+              className="rounded-3xl"
+            />
+          </div>
+          <div>
+            <Image
+              src="/accomodation-img-7.png"
+              width={550}
+              height={550}
+              alt="accodation-img-4"
+              className="rounded-3xl"
+            />
+          </div>
+          <div>
+            <Image
+              src="/accomodation-img-8.png"
+              width={550}
+              height={550}
+              alt="accodation-img-4"
+              className="rounded-3xl"
+            />
+          </div>
         </div>
       </div>
     </div>

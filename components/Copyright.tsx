@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Copyright() {
@@ -9,6 +11,15 @@ function Copyright() {
           <p className="text-xs md:text-sm text-neutral-500">
             Copyright &copy;{currentYear} - Maggies Lounge - All Rights Reserved
           </p>
+          <Link href="https://wa.me/254711129536" target="_blank">
+            <Image
+              src="/powered-by-jeinet.png"
+              width={250}
+              height={100}
+              alt="powered-by-jeinet"
+              className="w-32 h-auto"
+            />
+          </Link>
         </div>
       </div>
     </div>
