@@ -1303,4 +1303,69 @@ export const gallery = [
     img: "/gallery-12.png",
     alt: "gallery-12",
   },
+  {
+    id: 12,
+    img: "/gallery-13.png",
+    alt: "gallery-13",
+  },
+  {
+    id: 13,
+    img: "/gallery-14.png",
+    alt: "gallery-14",
+  },
+  {
+    id: 14,
+    img: "/gallery-15.png",
+    alt: "gallery-15",
+  },
+  {
+    id: 15,
+    img: "/gallery-16.png",
+    alt: "gallery-16",
+  },
+  {
+    id: 16,
+    img: "/gallery-17.png",
+    alt: "gallery-17",
+  },
+  {
+    id: 17,
+    img: "/gallery-18.png",
+    alt: "gallery-18",
+  },
+  {
+    id: 18,
+    img: "/gallery-19.png",
+    alt: "gallery-19",
+  },
+  {
+    id: 19,
+    img: "/gallery-20.png",
+    alt: "gallery-20",
+  },
+  {
+    id: 20,
+    img: "/gallery-21.png",
+    alt: "gallery-21",
+  },
+  {
+    id: 21,
+    img: "/gallery-22.png",
+    alt: "gallery-22",
+  },
+  {
+    id: 22,
+    img: "/gallery-23.png",
+    alt: "gallery-23",
+  },
+  {
+    id: 23,
+    img: "/gallery-24.png",
+    alt: "gallery-24",
+  },
+  {
+    id: 24,
+    img: "/gallery-25.png",
+    alt: "gallery-25",
+  },
 ];
