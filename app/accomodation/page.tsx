@@ -3,16 +3,19 @@ import React from "react";
 import { FaBed, FaShower, FaTv } from "react-icons/fa";
 import { PiArmchairFill, PiDeskFill } from "react-icons/pi";
 import { GiClothes, GiTowel, GiElectric, GiSlippers } from "react-icons/gi";
+import Subscription from "@/components/Subscription";
+import Footer from "@/components/Footer";
+import Copyright from "@/components/Copyright";
 
 function Accomodation() {
   return (
-    <div>
-      <div className="px-[8%] md:py-8 py-4 flex items-center justify-center">
-        <div className="w-full max-w-7xl md:py-20 py-10 flex items-center md:flex-row flex-col md:gap-20 gap-5">
+    <div className="absolute top-20 left-0 w-full z-0">
+      <div className="px-[8%] md:py-20 py-10 flex items-center justify-center">
+        <div className="w-full max-w-7xl flex items-center md:flex-row flex-col md:gap-20 gap-5">
           <div className="w-full">
-            <h4 className="md:text-4xl text-2xl font-bold">
+            <h4 className="md:text-5xl text-2xl font-bold">
               Experience a Comfortable Night at{" "}
-              <span className="bg-gradient-to-r from-[#b86320] to-[#f1852d] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#fb0200] to-[#0ccf06] bg-clip-text text-transparent">
                 Maggies Lounge
               </span>
             </h4>
@@ -27,30 +30,30 @@ function Accomodation() {
               Maggies Nest Accomodation.
             </p>
           </div>
-          <div className="w-full">
+          <div className="w-full aspect-video overflow-hidden">
             <Image
               src="/maggies-accomodation-1.png"
               width={450}
               height={450}
               alt="maggies-accomodation-1"
-              className="md:mx-auto rounded-3xl md:w-96 w-full"
+              className="rounded-3xl w-full h-full"
             />
           </div>
         </div>
       </div>
 
-      <div className="px-[8%] md:py-8 py-4 flex items-center justify-center bg-neutral-100">
-        <div className="w-full max-w-7xl md:py-20 py-10">
+      <div className="px-[8%] md:py-20 py-10 flex items-center justify-center bg-neutral-100">
+        <div className="w-full max-w-7xl">
           <h4 className="md:text-4xl text-2xl font-bold text-center">
-            Features
+            Accomodation <span className="bg-linear-to-r from-[#fb0200] to-[#0ccf06] bg-clip-text text-transparent">Features</span>
           </h4>
           <div className="grid grid-cols-auto md:gap-5 gap-2 md:mt-8 mt-4">
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <FaShower className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
-                <h5 className="md:text-xl text-lg font-bold text-neutral-700">
+                <h5 className="md:text-2xl text-xl font-bold text-neutral-700">
                   Bathroom
                 </h5>
                 <p className="text-xs md:text-sm text-neutral-500">
@@ -59,8 +62,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <PiArmchairFill className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -73,8 +76,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <GiClothes className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -87,8 +90,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <FaBed className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -101,8 +104,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <FaTv className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -116,8 +119,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <GiTowel className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -131,8 +134,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <GiElectric className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -146,8 +149,8 @@ function Accomodation() {
                 </p>
               </div>
             </div>
-            <div className="bg-white md:p-4 p-2 border border-neutral-200 rounded-2xl">
-              <span className="w-12 h-12 rounded-lg bg-gradient-to-r from-[#b86320] to-[#f1852d] flex items-center justify-center">
+            <div className="bg-white md:p-6 p-3 border border-neutral-200 md:rounded-4xl rounded-3xl">
+              <span className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#fb0200] to-[#0ccf06] flex items-center justify-center">
                 <GiSlippers className="text-white text-2xl" />
               </span>
               <div className="md:mt-4 mt-2">
@@ -241,6 +244,10 @@ function Accomodation() {
           </div>
         </div>
       </div>
+
+      <Subscription />
+      <Footer />
+      <Copyright />
     </div>
   );
 }

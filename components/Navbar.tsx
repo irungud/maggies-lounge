@@ -9,15 +9,15 @@ function Navbar() {
   const [navList, setNavList] = useState("");
   return (
     <div>
-      <div className="px-[8%] h-20 flex items-center justify-center">
+      <div className="px-[8%] h-20 flex items-center justify-center fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div className="w-full max-w-7xl flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/maggies-logo.png"
+              src="/maggies-logo-2.png"
               width={120}
               height={120}
               alt="maggies-logo"
-              className="w-16 h-auto rounded-full"
+              className="w-auto h-16 rounded-full"
             />
           </Link>
           <nav className="max-sm:hidden">
@@ -49,7 +49,7 @@ function Navbar() {
               </Link>*/}
               <Link href="/contact">
                 <li>
-                  <button className="bg-gradient-to-r from-[#b86320] to-[#f1852d] px-6 py-3 rounded-full text-xs md:text-sm text-white cursor-pointer">
+                  <button className="bg-gradient-to-r from-[#fb0200] to-[#0ccf06] px-8 py-3 rounded-full text-xs md:text-sm text-white cursor-pointer">
                     Contact
                   </button>
                 </li>
@@ -58,9 +58,9 @@ function Navbar() {
           </nav>
           <button className="md:hidden" onClick={() => setNavList(!navList)}>
             {navList ? (
-              <FaTimes className="text-3xl" />
+              <FaTimes className="text-2xl" />
             ) : (
-              <FaBars className="text-3xl" />
+              <FaBars className="text-2xl" />
             )}
           </button>
           {navList ? (

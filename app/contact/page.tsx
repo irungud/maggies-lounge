@@ -29,6 +29,9 @@ import {
   InputGroupTextarea,
 } from "@/components/ui/input-group";
 import Image from "next/image";
+import Subscription from "@/components/Subscription";
+import Footer from "@/components/Footer";
+import Copyright from "@/components/Copyright";
 
 const formSchema = z.object({
   title: z
@@ -42,11 +45,10 @@ const formSchema = z.object({
 });
 
 function Contact() {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -60,7 +62,7 @@ function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: "19986902-716f-4b77-a495-8260b0151c7d",
-          ...formData
+          ...formData,
         }),
       });
 
@@ -81,7 +83,7 @@ function Contact() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -111,9 +113,9 @@ function Contact() {
   }
 
   return (
-    <div>
-      <div className="px-[8%] md:py-8 py-4 flex items-center justify-center">
-        <div className="w-full max-w-7xl md:py-20 py-10 flex items-center md:flex-row flex-col md:gap-20 gap-5">
+    <div className="absolute top-20 left-0 w-full z-0">
+      <div className="px-[8%] md:py-20 py-10 flex items-center justify-center">
+        <div className="w-full max-w-7xl flex items-center md:flex-row flex-col md:gap-20 gap-5">
           <div className="w-full max-sm:hidden">
             <Image
               src="/contact-img.png"
@@ -172,7 +174,7 @@ function Contact() {
                   placeholder="Write Your Message Here..."
                   className="w-full text-xs md:text-sm border border-neutral-300 px-4 py-2 md:h-32 h-16 rounded-md outline-none focus:ring-2 focus:ring-neutral-200"
                 ></textarea>
-                <Button className="w-full px-4 py-2 bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-4 mt-2 text-white hover:bg-gradient-to-l transition-all duration-500 cursor-pointer">
+                <Button className="w-full px-4 py-2 bg-gradient-to-r from-[#fb0200] to-[#0ccf06] md:mt-4 mt-2 text-white hover:bg-gradient-to-l transition-all duration-500 cursor-pointer">
                   Send Message
                 </Button>
               </div>
@@ -181,27 +183,23 @@ function Contact() {
         </div>
       </div>
 
-      <div className="px-[8%] md:py-8 py-4 flex items-center justify-center bg-neutral-100">
-        <div className="w-full max-w-7xl md:py-20 py-10">
-          <div className="bg-white md:p-10 p-5 rounded-3xl">
+      <div className="px-[8%] md:py-20 py-10 flex items-center justify-center bg-neutral-100">
+        <div className="w-full max-w-7xl">
+          <div className="bg-white md:p-6 p-3 rounded-4xl">
             <div>
               <iframe
                 width="100%"
-                height="500"
+                height="400"
                 className="rounded-xl"
-                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Maggies%20Nest%20Kenya+(Maggies%20Nest%20Kenya)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              >
-                <a href="https://www.mapsdirections.info/it/calcola-la-popolazione-su-una-mappa/">
-                  città più popolate Italia mappa
-                </a>
-              </iframe>
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Maggies%20Lounge%20Ndwaru%20Rd.&amp;maptype=roadmap&amp;zoom=14"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="px-[8%] md:py-8 py-4 flex items-center justify-center">
-        <div className="w-full max-w-7xl md:py-20 py-10 flex items-center md:gap-20 gap-5">
+      <div className="px-[8%] md:py-20 py-10 flex items-center justify-center">
+        <div className="w-full max-w-7xl flex items-center md:gap-20 gap-5">
           <div className="w-full">
             <h4 className="md:text-3xl text-xl font-bold text-neutral-700">
               Talk{" "}
@@ -210,49 +208,53 @@ function Contact() {
               </span>
             </h4>
             <div className="md:mt-4 mt-2">
-              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d]">
+              <div className="flex items-center gap-2 p-3 rounded-full bg-gradient-to-r from-[#fb0200] to-[#0ccf06]">
                 <span></span>
                 <p className="text-white text-xs md:text-sm">
-                  +254 785 546 302 - Restaurant
+                  +254 738 936 218 - Restaurant
                 </p>
               </div>
-              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
+              <div className="flex items-center gap-2 p-3 rounded-full bg-gradient-to-r from-[#fb0200] to-[#0ccf06] md:mt-2 mt-1">
                 <span></span>
                 <p className="text-xs md:text-sm text-white">
                   +254 786 484 277 - Accomodation
                 </p>
               </div>
-              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
+              <div className="flex items-center gap-2 p-3 rounded-full bg-gradient-to-r from-[#fb0200] to-[#0ccf06] md:mt-2 mt-1">
                 <span></span>
                 <p className="text-xs md:text-sm text-white">
                   +254 725 939 703 - Accomodation
                 </p>
               </div>
-              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
+              <div className="flex items-center gap-2 p-3 rounded-full bg-gradient-to-r from-[#fb0200] to-[#0ccf06] md:mt-2 mt-1">
                 <span></span>
                 <p className="text-xs md:text-sm text-white">
                   info@maggieslounge.com
                 </p>
               </div>
-              <div className="flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-[#b86320] to-[#f1852d] md:mt-2 mt-1">
+              <div className="flex items-center gap-2 p-3 rounded-full bg-gradient-to-r from-[#fb0200] to-[#0ccf06] md:mt-2 mt-1">
                 <span></span>
                 <p className="text-xs md:text-sm text-white">
-                  Waithaka, Nduaru Rd.
+                  Along Ndwaru Rd.
                 </p>
               </div>
             </div>
           </div>
           <div className="w-full">
             <Image
-              src="/maggies-customer-service.png"
+              src="/maggies-staff.png"
               width={650}
-              height={650}
-              alt="maggies-customer-service"
-              className="md:w-96 w-48 h-auto md:mx-auto"
+              height={400}
+              alt="maggies-staff"
+              className="w-full h-auto md:rounded-3xl rounded-2xl"
             />
           </div>
         </div>
       </div>
+
+      <Subscription />
+      <Footer />
+      <Copyright />
     </div>
   );
 }

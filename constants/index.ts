@@ -1245,127 +1245,220 @@ export const barMenu = [
 export const gallery = [
   {
     id: 0,
-    img: "/gallery-1.png",
+    img: "/gallery-1.jpeg",
     alt: "gallery-1",
   },
   {
     id: 1,
-    img: "/gallery-2.png",
+    img: "/gallery-2.jpeg",
     alt: "gallery-2",
   },
   {
     id: 2,
-    img: "/gallery-3.png",
+    img: "/gallery-3.jpeg",
     alt: "gallery-3",
   },
   {
     id: 3,
-    img: "/gallery-4.png",
+    img: "/gallery-4.jpeg",
     alt: "gallery-4",
   },
   {
     id: 4,
-    img: "/gallery-5.png",
+    img: "/gallery-5.jpeg",
     alt: "gallery-5",
   },
   {
     id: 5,
-    img: "/gallery-6.png",
+    img: "/gallery-6.jpeg",
     alt: "gallery-6",
   },
   {
     id: 6,
-    img: "/gallery-7.png",
+    img: "/gallery-7.jpeg",
     alt: "gallery-7",
   },
   {
     id: 7,
-    img: "/gallery-8.png",
+    img: "/gallery-8.jpeg",
     alt: "gallery-8",
   },
   {
     id: 8,
-    img: "/gallery-9.png",
+    img: "/gallery-9.jpeg",
     alt: "gallery-9",
   },
   {
     id: 9,
-    img: "/gallery-10.png",
+    img: "/gallery-10.jpeg",
     alt: "gallery-10",
   },
   {
     id: 10,
-    img: "/gallery-11.png",
+    img: "/gallery-11.jpeg",
     alt: "gallery-11",
   },
   {
     id: 11,
-    img: "/gallery-12.png",
+    img: "/gallery-12.jpeg",
     alt: "gallery-12",
   },
   {
     id: 12,
-    img: "/gallery-13.png",
+    img: "/gallery-13.jpeg",
     alt: "gallery-13",
   },
   {
     id: 13,
-    img: "/gallery-14.png",
+    img: "/gallery-14.jpeg",
     alt: "gallery-14",
   },
   {
     id: 14,
-    img: "/gallery-15.png",
+    img: "/gallery-15.jpeg",
     alt: "gallery-15",
   },
   {
     id: 15,
-    img: "/gallery-16.png",
+    img: "/gallery-16.jpeg",
     alt: "gallery-16",
   },
   {
     id: 16,
-    img: "/gallery-17.png",
+    img: "/gallery-17.jpeg",
     alt: "gallery-17",
   },
   {
     id: 17,
-    img: "/gallery-18.png",
+    img: "/gallery-18.jpeg",
     alt: "gallery-18",
   },
   {
     id: 18,
-    img: "/gallery-19.png",
+    img: "/gallery-19.jpeg",
     alt: "gallery-19",
   },
   {
     id: 19,
-    img: "/gallery-20.png",
+    img: "/gallery-20.jpeg",
     alt: "gallery-20",
   },
   {
     id: 20,
-    img: "/gallery-21.png",
+    img: "/gallery-21.jpeg",
     alt: "gallery-21",
   },
   {
     id: 21,
-    img: "/gallery-22.png",
+    img: "/gallery-22.jpeg",
     alt: "gallery-22",
   },
   {
     id: 22,
-    img: "/gallery-23.png",
+    img: "/gallery-23.jpeg",
     alt: "gallery-23",
   },
   {
     id: 23,
-    img: "/gallery-24.png",
+    img: "/gallery-24.jpeg",
     alt: "gallery-24",
   },
   {
     id: 24,
-    img: "/gallery-25.png",
+    img: "/gallery-25.jpeg",
     alt: "gallery-25",
   },
+  {
+    id: 25,
+    img: "/gallery-26.jpeg",
+    alt: "gallery-26",
+  },
+  {
+    id: 26,
+    img: "/gallery-27.jpeg",
+    alt: "gallery-27",
+  },
+  {
+    id: 27,
+    img: "/gallery-28.jpeg",
+    alt: "gallery-28",
+  },
+  {
+    id: 28,
+    img: "/gallery-29.jpeg",
+    alt: "gallery-29",
+  },
+  {
+    id: 29,
+    img: "/gallery-30.jpeg",
+    alt: "gallery-30",
+  },
+  {
+    id: 30,
+    img: "/gallery-31.jpeg",
+    alt: "gallery-31",
+  },
+  {
+    id: 31,
+    img: "/gallery-32.jpeg",
+    alt: "gallery-32",
+  },
+  {
+    id: 32,
+    img: "/gallery-33.jpeg",
+    alt: "gallery-33",
+  },
+  {
+    id: 33,
+    img: "/gallery-34.jpeg",
+    alt: "gallery-34",
+  },
+  {
+    id: 34,
+    img: "/gallery-35.jpeg",
+    alt: "gallery-35",
+  },
+  {
+    id: 35,
+    img: "/gallery-36.jpeg",
+    alt: "gallery-36",
+  },
+  {
+    id: 36,
+    img: "/gallery-37.jpeg",
+    alt: "gallery-37",
+  },
+  {
+    id: 37,
+    img: "/gallery-38.jpeg",
+    alt: "gallery-38",
+  },
+  {
+    id: 38,
+    img: "/gallery-39.jpeg",
+    alt: "gallery-39",
+  },
+  {
+    id: 40,
+    img: "/gallery-41.jpeg",
+    alt: "gallery-41",
+  },
 ];
+
+export const videos = [
+  {
+    id: 0,
+    video: "/maggies-video-1.mp4",
+    alt: "video-1",
+  },
+  {
+    id: 1,
+    video: "/maggies-video-2.mp4",
+    alt: "video-2",
+  },
+  {
+    id: 2,
+    video: "/maggies-video-3.mp4",
+    alt: "video-3",
+  }
+]

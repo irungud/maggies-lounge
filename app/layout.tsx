@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,8 +7,8 @@ import Subscription from "@/components/Subscription";
 import Copyright from "@/components/Copyright";
 import Topbar from "@/components/Topbar";
 
-const poppinsSans = Poppins({
-  variable: "--font-poppins",
+const onest = Onest({
+  variable: "--font-onest",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   preload: false,
@@ -26,12 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppinsSans.variable} antialiased`}>
+      <body className={`${onest.variable} antialiased relative bg-white`}>
         <Navbar />
         {children}
-        <Subscription />
-        <Footer />
-        <Copyright />
         </body>
     </html>
   );
