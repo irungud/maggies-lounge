@@ -7,6 +7,11 @@ import Subscription from "@/components/Subscription";
 import Copyright from "@/components/Copyright";
 import Topbar from "@/components/Topbar";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 const onest = Onest({
   variable: "--font-onest",
   subsets: ["latin"],

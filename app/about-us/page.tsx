@@ -10,6 +10,11 @@ import { IoMdWine } from "react-icons/io";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 function About() {
   return (
     <div className="absolute top-20 left-0 w-full z-0">

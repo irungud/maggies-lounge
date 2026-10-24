@@ -7,6 +7,11 @@ import Subscription from "@/components/Subscription";
 import Footer from "@/components/Footer";
 import Copyright from "@/components/Copyright";
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 function Accomodation() {
   return (
     <div className="absolute top-20 left-0 w-full z-0">
