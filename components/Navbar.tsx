@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  const [navList, setNavList] = useState("");
+  const [navList, setNavList] = useState(false);
   return (
     <div>
       <div className="px-[8%] h-20 flex items-center justify-center fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
@@ -56,7 +56,7 @@ function Navbar() {
               </Link>
             </ul>
           </nav>
-          <button className="md:hidden" onClick={() => setNavList(!navList)}>
+          <button className="md:hidden" onClick={() => setNavList((open) => !open)}>
             {navList ? (
               <FaTimes className="text-2xl" />
             ) : (
@@ -65,32 +65,32 @@ function Navbar() {
           </button>
           {navList ? (
             <ul className="flex md:hidden flex-col absolute left-0 top-20 w-full bg-white shadow p-[8%] gap-3">
-              <Link href="/" onClick={() => setNavList(!navList)}>
+              <Link href="/" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">Home</li>
               </Link>
-              <Link href="/about-us" onClick={() => setNavList(!navList)}>
+              <Link href="/about-us" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">About</li>
               </Link>
-              <Link href="/restaurant" onClick={() => setNavList(!navList)}>
+              <Link href="/restaurant" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">
                   Restaurant
                 </li>
               </Link>
-              <Link href="/bar" onClick={() => setNavList(!navList)}>
+              <Link href="/bar" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">Bar</li>
               </Link>
-              <Link href="/accomodation" onClick={() => setNavList(!navList)}>
+              <Link href="/accomodation" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">
                   Accomodation
                 </li>
               </Link>
-              <Link href="/gallery" onClick={() => setNavList(!navList)}>
+              <Link href="/gallery" onClick={() => setNavList(false)}>
                 <li className="text-xs md:text-sm text-neutral-500">Gallery</li>
               </Link>
               {/*<Link href="/contact" onClick={() => setNavList(!navList)}>
                 <li className="text-xs md:text-sm text-neutral-500">Contact</li>
               </Link>*/}
-              <Link href="/contact" onClick={() => setNavList(!navList)}>
+              <Link href="/contact" onClick={() => setNavList(false)}>
                 <button className="w-full bg-gradient-to-r from-[#b86320] to-[#f1852d] px-6 py-4 text-xs md:text-sm rounded-full text-white">
                   Contact
                 </button>

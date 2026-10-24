@@ -1,24 +1,6 @@
 import type { Metadata } from "next";
-import { Onest } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Subscription from "@/components/Subscription";
-import Copyright from "@/components/Copyright";
-import Topbar from "@/components/Topbar";
-
-// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
-// Remove this opt-out after verifying the segment passes validation without it.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
-const onest = Onest({
-  variable: "--font-onest",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  preload: false,
-});
-
 export const metadata: Metadata = {
   title: "Maggies Nest Bar and Restaurant",
   description: "Restaurant, Bar and Accomodation",
@@ -31,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.variable} antialiased relative bg-white`}>
+      <body className={`antialiased relative bg-white`}>
         <Navbar />
         {children}
         </body>

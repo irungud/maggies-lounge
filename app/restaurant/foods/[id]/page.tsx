@@ -4,15 +4,16 @@ import Copyright from "@/components/Copyright";
 import Footer from "@/components/Footer";
 import Subscription from "@/components/Subscription";
 import { breakfast } from "@/constants";
-import { useRouter } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import React from "react";
 import { FaAngleLeft } from "react-icons/fa";
 
-function Food({ params }: any) {
+function Food({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter();
   const resolvedParams = React.use(params);
   const { id } = resolvedParams;
   const food = breakfast.find((item) => item.id.toString() === id.toString());
+  if (!food) notFound();
 
   return (
     <div className="absolute top-20 left-0 w-full z-0">

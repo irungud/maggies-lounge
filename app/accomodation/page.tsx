@@ -7,10 +7,6 @@ import Subscription from "@/components/Subscription";
 import Footer from "@/components/Footer";
 import Copyright from "@/components/Copyright";
 
-// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
-// Remove this opt-out after verifying the segment passes validation without it.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
 function Accomodation() {
   return (
@@ -25,7 +21,7 @@ function Accomodation() {
               </span>
             </h4>
             <p className="text-xs md:text-sm text-neutral-500 md:mt-8 mt-4">
-              When it comes to accomodation, our client's luxury is our
+              When it comes to accomodation, our client&apos;s luxury is our
               priority. We have rooms suitable for personal and family use. Our
               rooms are equipped with features that give unmatched comfort each
               night you spend at Maggies Nest Accomodation. Our accomodation
@@ -76,7 +72,7 @@ function Accomodation() {
                   Personal Desk
                 </h5>
                 <p className="text-xs md:text-sm text-neutral-500">
-                  A desk and chair will keep you comfortable in case you'd like
+                  A desk and chair will keep you comfortable in case you&apos;d like
                   complete unfinished tasks from your laptop
                 </p>
               </div>
@@ -148,7 +144,7 @@ function Accomodation() {
                   Charging Area
                 </h5>
                 <p className="text-xs md:text-sm text-neutral-500">
-                  For a more comfortable stay, you need your gadgets' battery at
+                  For a more comfortable stay, you need your gadgets&apos; battery at
                   100%, and we got you covered on that. Charge from regularly
                   maintaned sockets.
                 </p>

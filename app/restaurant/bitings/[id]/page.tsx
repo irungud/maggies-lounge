@@ -4,15 +4,16 @@ import Copyright from "@/components/Copyright";
 import Footer from "@/components/Footer";
 import Subscription from "@/components/Subscription";
 import { Bitings } from "@/constants";
-import { useRouter } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import React from "react";
 import { FaAngleLeft } from "react-icons/fa";
 
-function Biting({ params }: any) {
+function Biting({ params }: { params: Promise<{ id: string }> }) {
   const router = useRouter();
   const resolvedParams = React.use(params);
   const { id } = resolvedParams;
   const food = Bitings.find((item) => item.id.toString() === id.toString());
+  if (!food) notFound();
 
   return (
     <div className="absolute top-20 left-0 w-full z-0">

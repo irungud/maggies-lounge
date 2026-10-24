@@ -10,10 +10,6 @@ import { IoMdWine } from "react-icons/io";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
-// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
-// Remove this opt-out after verifying the segment passes validation without it.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
 function About() {
   return (
@@ -106,7 +102,7 @@ function About() {
         <div className="w-full max-w-7xl flex items-center md:flex-row flex-col gap-5 md:gap-10">
           <div className="w-full">
             <h4 className="md:text-5xl text-2xl font-bold text-neutral-700">
-              At Maggies Lounge, You're Served{" "}
+              At Maggies Lounge, You&apos;re Served{" "}
               <span className="bg-gradient-to-r from-[#fb0200] to-[#0ccf06] bg-clip-text text-transparent">
                 by Professionals
               </span>
